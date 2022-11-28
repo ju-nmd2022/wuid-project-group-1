@@ -9,6 +9,7 @@
 html {
   background-color: #0093e9;
   background-image: linear-gradient(90deg, #0093e9 0%, #80d0c7 100%);
+  font-size: 2rem;
 }
 
 .container {
@@ -17,21 +18,37 @@ html {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(12, 1fr);
-
-  grid-template-areas:
-  "header"
-  "hero"
-  "footer" ;
 }
 
-.header {
-  grid-area: header;
+.logo {
+  display: flex;
+  flex-wrap: wrap;
+  grid-column: 1 / 2;
+  grid-row: 1;
+  justify-content: center;
+  align-items: center;
+  padding-top: 0.1em;
+  padding-left: 0.1em;
 }
 
+
+.headernavigation {
+  display: flex;
+  /* flex-wrap: wrap; */
+  grid-column: -1;
+  justify-content: space-between;
+  grid-gap: 0.5em;
+  align-items: center;
+  padding-right: 0.5em;
+}
 .hero {
-  grid-area: hero;
+  grid-column: 1 / -1;
+  grid-row: 4;
+  justify-self: center;
 }
 
 .footer {
-  grid-area: footer;
+  grid-column: 1 / -1;
+  grid-row: -1;
+  justify-self: center;
 }
