@@ -64,12 +64,13 @@ html {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
 
   background-color: darkturquoise;
   grid-column: 1 / -1;
   grid-row: 4;
+  gap: 3em;
 }
 
 .container .menu a {
