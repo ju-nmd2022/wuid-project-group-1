@@ -133,13 +133,32 @@ html {
 
 .footer {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   font-size: 2rem;
 
   grid-column: 1 / -1;
   grid-row: -1;
   background-color: darkturquoise;
+}
+
+.footer p {
+  padding-left: 0.5em;
+  font-size: 2rem;
+}
+
+.footer ul a {
+  color: black;
+  padding-right: 0.5em;
+  text-decoration: none;
+}
+
+.footer ul a:hover {
+  color: yellow;
+}
+
+.footer ul li {
+  list-style-type: none;
 }
 
 @media screen and (max-width: 480px) {
@@ -208,10 +227,10 @@ html {
     align-items: center;
   }
 
-.footer p {
-  font-size: 1.5rem;
-  padding-left: 0.5em;
-}
+  .footer p {
+    font-size: 1.5rem;
+    padding-left: 0.5em;
+  }
 
   .container .footer ul a {
     font-size: 1.5rem;
