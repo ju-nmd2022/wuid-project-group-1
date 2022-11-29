@@ -120,7 +120,12 @@ html {
   padding-right: 2em;
 }
 
+.content2 p {
+  font-size: 2rem;
+}
+
 .content2 a {
+  font-size: 2rem;
   text-decoration: none;
   color: #fff;
 }
