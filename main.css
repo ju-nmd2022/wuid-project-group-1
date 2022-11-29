@@ -13,7 +13,7 @@ html {
 
 .container {
   height: 100vh;
-  width: 100%;
+  width: 100vw;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(12, 1fr);
@@ -32,6 +32,7 @@ html {
   background-image: url(./images/party.jpg);
   background-size: cover;
   background-position: center;
+  width: 100%;
 }
 
 .hero h1 {
@@ -62,7 +63,6 @@ html {
 
 .container .menu {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
   align-items: center;
@@ -87,10 +87,10 @@ html {
 
 .content1 {
   display: flex;
-  grid-column: 1 / 7;
-  grid-row: 5 / 12;
-  justify-content: space-evenly;
-  align-items: center;
+  grid-column: 1 / 6;
+  grid-row: 6 / 11;
+  justify-content: center;
+  align-content: center;
   background-image: url(./images/grogu.webp);
   background-size: contain;
   background-position: center;
@@ -111,12 +111,13 @@ html {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  grid-column: 7 / 12;
-  grid-row: 5 / 13;
+  grid-column: 6 / -1;
+  grid-row: 5 / 12;
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
   color: #fff;
+  padding-right: 2em;
 }
 
 .content2 a {
@@ -137,6 +138,90 @@ html {
   font-size: 2rem;
 
   grid-column: 1 / -1;
-  grid-row: 13 / 14;
+  grid-row: -1;
   background-color: darkturquoise;
+}
+
+@media screen and (max-width: 480px) {
+  .hero h1 {
+    font-size: 3rem;
+  }
+
+  .hero a {
+    font-size: 2rem;
+  }
+
+  .container .menu {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1em;
+  }
+
+  .container .menu a {
+    font-size: 1.5rem;
+  }
+
+  .content1 {
+    display: flex;
+    grid-column: 1 / -1;
+    grid-row: 6 / 10;
+    justify-content: center;
+    align-content: center;
+    background-image: url(./images/grogu.webp);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .content1 a {
+    font-size: 2rem;
+    text-decoration: none;
+    color: black;
+  }
+
+  .content2 {
+    display: flex;
+    flex-direction: row;
+    grid-column: 1 / -1;
+    grid-row: 11 / 12;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+  }
+
+  .content2 p {
+    font-size: 1.5rem;
+    padding-left: 2em;
+  }
+  .content2 a {
+    text-decoration: none;
+    color: yellow;
+    font-size: 1.5rem;
+    padding-left: 2em;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+    align-items: center;
+  }
+
+.footer p {
+  font-size: 1.5rem;
+  padding-left: 0.5em;
+}
+
+  .container .footer ul a {
+    font-size: 1.5rem;
+    padding-right: 0.5em;
+    color: black;
+    flex-direction: row;
+    text-decoration: none;
+  }
+
+  .container .footer ul li {
+    list-style-type: none;
+  }
 }
