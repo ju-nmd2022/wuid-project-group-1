@@ -8,7 +8,7 @@
 
 html {
   font-family: "Poppins", "sans-serif";
-  background-color: black;
+  background-color: rgb(182, 182, 182);
 }
 
 .container {
@@ -52,7 +52,7 @@ html {
 
 .hero a {
   font-size: 2rem;
-  color: black;
+  color: white;
 }
 
 .hero a:hover {
