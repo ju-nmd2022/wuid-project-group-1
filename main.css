@@ -70,7 +70,7 @@ html {
   background-color: darkturquoise;
   grid-column: 1 / -1;
   grid-row: 4;
-  gap: 3em;
+  gap: 2em;
 }
 
 .container .menu a {
@@ -108,12 +108,11 @@ html {
 }
 
 .deals {
-grid-column: 9;
-grid-row: 6;
-justify-content: center;
-align-content: center;
-display: flex;
-
+  grid-column: 9;
+  grid-row: 6;
+  justify-content: center;
+  align-content: center;
+  display: flex;
 }
 .content2 {
   display: flex;
@@ -127,8 +126,32 @@ display: flex;
   color: #fff;
   padding-right: 2em;
 }
-.dealimg{
+.dealimg {
   width: 8rem;
+}
+
+
+.searchbar {
+  padding-left: 2em;
+  padding-bottom: 2em;
+}
+
+.searchbar #searchbar {
+  outline: 0;
+  border: transparent;
+  border-radius: 0.5rem;
+  text-align: center;
+  padding-top: 0.1rem;
+  padding-bottom: 0.1rem;
+}
+
+.searchbar #searchbutton {
+  outline: 0;
+  border: transparent;
+  padding: 0.1rem;
+  border-radius: 0.2rem;
+  background-color: #fff;
+
 }
 
 .content2 p {
@@ -189,6 +212,7 @@ display: flex;
 
   .container .menu {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 1em;
   }
@@ -290,7 +314,7 @@ display: flex;
   }
   .deals {
     grid-column: 6 / 8;
-    grid-row: 10 ;
+    grid-row: 10;
   }
   .content2 {
     display: flex;
