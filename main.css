@@ -338,7 +338,7 @@ html {
   }
 
   .container .menu a {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 
   .content2 p {
@@ -361,12 +361,12 @@ html {
   }
 
   .footer p {
-    font-size: 1.5rem;
+    font-size: 1rem;
     padding-left: 0.5em;
   }
 
   .container .footer ul a {
-    font-size: 1.5rem;
+    font-size: 1rem;
     padding-right: 0.5em;
     color: black;
     flex-direction: row;
