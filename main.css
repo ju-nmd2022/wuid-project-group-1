@@ -38,7 +38,7 @@ html {
 .hero h1 {
   display: flex;
   padding-left: 0.2em;
-  font-size: 5rem;
+  font-size: 4rem;
 }
 
 .hero ul {
@@ -131,15 +131,10 @@ html {
 }
 
 
-.searchbar {
-  padding-left: 2em;
-  padding-bottom: 2em;
-}
-
 .searchbar #searchbar {
-  outline: 0;
+  outline: none;
   border: transparent;
-  border-radius: 0.5rem;
+  border-radius: 0.3rem;
   text-align: center;
   padding-top: 0.1rem;
   padding-bottom: 0.1rem;
@@ -148,10 +143,12 @@ html {
 .searchbar #searchbutton {
   outline: 0;
   border: transparent;
-  padding: 0.1rem;
   border-radius: 0.2rem;
   background-color: #fff;
-
+  padding-top: 0.1rem;
+  padding-bottom: 0.1rem;
+  padding-left: 0.2rem;
+  padding-right: 0.2rem;
 }
 
 .content2 p {
@@ -373,7 +370,6 @@ html {
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
-
   .hero h1 {
     font-size: 3rem;
   }
@@ -454,6 +450,3 @@ html {
     text-decoration: none;
   }
 }
-
-
-
