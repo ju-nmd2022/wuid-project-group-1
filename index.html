@@ -12,6 +12,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" type="text/css" href="./main.css" />
+    <script src="index.js" defer></script>
 
     <title>Playful</title>
   </head>
@@ -44,7 +45,7 @@
       <!-- MENU SECTION -->
 
       <div class="menu">
-        <a href="#"><p>Home</p></a>
+        <a href="/index.html"><p>Home</p></a>
         <a href="#"><p>Stores</p></a>
         <a href="#"><p>Toys</p></a>
         <a href="#"><p>Games</p></a>
@@ -68,8 +69,15 @@
         <!-- https://www.youtube.com/watch?v=0yhetysnDRI -->
         <div class="searchbar">
           <form>
-            <input type="text" placeholder="Search..." id="searchbar" />
-            <button type="submit" id="searchbutton">Search</button>
+            <input
+              type="text"
+              placeholder="Search..."
+              id="searchbar"
+              name="q"
+            />
+            <button type="submit" id="searchbutton">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
           </form>
         </div>
 
