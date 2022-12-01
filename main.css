@@ -212,13 +212,14 @@ html {
 
   .container .menu {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 1em;
+    justify-content: space-evenly;
+    gap: 0.5em;
   }
 
   .container .menu a {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 
   .content1 {
@@ -237,6 +238,10 @@ html {
     font-size: 2rem;
     text-decoration: none;
     color: black;
+  }
+
+  .searchbar {
+    padding-left: 3em;
   }
 
   .content2 {
