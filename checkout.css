@@ -8,7 +8,7 @@
 
 html {
   font-family: "Poppins", "sans-serif";
-  background-color: gainsboro;
+  background-color: #fff;
   overflow: scroll;
 }
 
@@ -93,7 +93,7 @@ html {
   align-items: center;
   grid-column: 2 / 4;
   grid-row: 6 / 7;
-  background-color: darkturquoise;
+  background-color: gainsboro;
 }
 
 .shoppingcart-elephant img {
@@ -107,7 +107,7 @@ html {
   grid-row: 8 / 11;
   justify-content: center;
   align-items: center;
-  background-color:darkturquoise;
+  background-color: gainsboro;
 }
 
 .shoppingcart-brocc img {
@@ -117,11 +117,11 @@ html {
 .total-sum {
   display: flex;
   flex-direction: column;
-  grid-column: 5 / 9;
+  grid-column: 5 / 8;
   grid-row: 6 / 11;
   justify-content: space-evenly;
   align-items: center;
-  background-color: darkturquoise;
+  background-color: gainsboro;
 }
 
 .total-sum h2 {
@@ -136,6 +136,7 @@ html {
   padding: 1rem;
   border: transparent;
   border-radius: 0.4rem;
+  background-color: darkturquoise;
 }
 
 .go-to-checkout a {
