@@ -16,7 +16,7 @@ html {
   width: 100vw;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(auto-fit, 1fr);
+  grid-template-rows: repeat(auto-fill, 1fr);
 }
 
 /* HERO SECTION */
@@ -38,7 +38,7 @@ html {
 .hero h1 {
   display: flex;
   padding-left: 0.2em;
-  font-size: 5rem;
+  font-size: 4rem;
 }
 
 .hero ul {
@@ -52,7 +52,7 @@ html {
 
 .hero a {
   font-size: 2rem;
-  color: white;
+  color: black;
 }
 
 .hero a:hover {
@@ -67,7 +67,7 @@ html {
   justify-content: center;
   align-items: center;
 
-  background-color: darkturquoise;
+  background-color: darkcyan;
   grid-column: 1 / -1;
   grid-row: 4;
   gap: 2em;
@@ -85,126 +85,76 @@ html {
 
 /* CONTENT SECTION */
 
-.infobox {
+.container .checkout-1 {
   display: flex;
+  grid-column: 2 / 6;
+  grid-row: 10;
   flex-direction: column;
-  grid-column: 1/ -1;
-  grid-row: 5 / 8;
-  padding-top: 2rem;
-}
-.infobox h2 {
-  display: flex;
-  justify-content: center;
-  grid-column: 1 / -1;
-  font-size: 2.5rem;
-}
-
-.infobox h3 {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
-  text-align: center;
-  font-size: 1.5rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
-main {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
   justify-content: space-evenly;
-  grid-column: 1 / -1;
-  grid-row: 8 / 12;
-  /* justify-content: space-between; */
-}
-
-section {
-  display: flex;
-  flex-direction: column;
   align-items: center;
-  padding: 1.5rem;
-  padding-bottom: 2.5rem;
-}
-section img {
-  max-width: 200px;
-}
-
-section a {
-  padding: 0.5rem;
-  font-size: 1.2rem;
-  text-decoration: none;
-  color: black;
-}
-
-section p {
-  font-size: 1.5rem;
-}
-
-.content1 {
-  display: flex;
-  grid-column: 1 / 6;
-  grid-row: 6 / 11;
-  justify-content: center;
-  align-content: center;
-  background-image: url(./images/grogu.webp);
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.content1 a {
-  font-size: 2rem;
-  text-decoration: none;
-  color: black;
-}
-
-.content1 a:hover {
-  color: yellow;
-}
-
-.content2 {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  grid-column: 6 / -1;
-  grid-row: 5 / 12;
-  justify-content: center;
-  align-items: center;
-  gap: 0.5rem;
-  color: #fff;
+  gap: 1rem;
+  background-color: black;
+  padding-left: 2em;
   padding-right: 2em;
+  padding-top: 2em;
+  padding-bottom: 2em;
 }
-
-.content2 p {
-  font-size: 2rem;
+.checkout-1 img {
+  grid-column: 1 / -1;
+  width: 10rem;
 }
-
-.content2 a {
-  font-size: 2rem;
-  text-decoration: none;
+.checkout-1 h2 {
+  font-size: 1.5rem;
   color: #fff;
 }
 
-.content2 a:hover {
-  color: yellow;
+.checkout-1 p {
+  font-size: 1.3rem;
+  color: #fff;
+}
+
+.checkout-2 {
+  display: flex;
+  flex-direction: column;
+  grid-column: 8 / 11;
+  grid-row: 10;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.checkout-2 h2 {
+  color: black;
+}
+
+.text {
+  padding: 0.4rem;
+  border: 0.2rem solid black;
+  border-radius: 0.4rem;
+  color: black;
+  outline: 0;
+  text-align: center;
+}
+
+.submit {
+  padding: 0.6rem;
+  color: black;
+  border-radius: 0.4rem;
+  border: 0.2rem solid black;
+  background-color: #fff;
+  font-size: 1rem;
 }
 
 /* FOOTER SECTION */
 
-/* https://www.geeksforgeeks.org/how-to-create-footer-to-stay-at-the-bottom-of-a-web-page/ */
-
 .footer {
-  grid-column: 1 / -1;
-  grid-row: 20;
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
   font-size: 2rem;
 
-  /* grid-column: 1 / -1;
-  grid-row: 20; */
+  grid-column: 1 / -1;
+  grid-row: 20;
   background-color: darkturquoise;
 }
 
@@ -267,6 +217,10 @@ section p {
     color: black;
   }
 
+  .searchbar {
+    padding-left: 3em;
+  }
+
   .content2 {
     display: flex;
     flex-direction: row;
@@ -283,7 +237,6 @@ section p {
   }
   .content2 a {
     text-decoration: none;
-    color: yellow;
     font-size: 1.5rem;
     padding-left: 2em;
   }
@@ -297,12 +250,12 @@ section p {
   }
 
   .footer p {
-    font-size: 1.5rem;
+    font-size: 1rem;
     padding-left: 0.5em;
   }
 
   .container .footer ul a {
-    font-size: 1.5rem;
+    font-size: 1rem;
     padding-right: 0.5em;
     color: black;
     flex-direction: row;
@@ -361,7 +314,7 @@ section p {
   }
 
   .container .menu a {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 
   .content2 p {
@@ -370,7 +323,6 @@ section p {
   }
   .content2 a {
     text-decoration: none;
-    color: yellow;
     font-size: 1.5rem;
     padding-left: 1em;
   }
@@ -381,6 +333,88 @@ section p {
 
     justify-content: space-between;
     align-items: center;
+  }
+
+  .footer p {
+    font-size: 1rem;
+    padding-left: 0.5em;
+  }
+
+  .container .footer ul a {
+    font-size: 1rem;
+    padding-right: 0.5em;
+    color: black;
+    flex-direction: row;
+    text-decoration: none;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .hero h1 {
+    font-size: 3rem;
+  }
+
+  .hero a {
+    font-size: 2rem;
+  }
+
+  .content1 {
+    display: flex;
+    grid-column: 1 / -1;
+    grid-row: 6 / 10;
+    justify-content: center;
+    align-content: center;
+    background-image: url(./images/grogu.webp);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .content1 a {
+    font-size: 2rem;
+    text-decoration: none;
+    color: black;
+  }
+  .deals {
+    grid-column: 6 / 8;
+    grid-row: 10;
+  }
+  .content2 {
+    display: flex;
+    flex-direction: column;
+    grid-column: 1 / -1;
+    grid-row: 11 / 12;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+  }
+
+  .container .menu {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+  }
+
+  .container .menu a {
+    font-size: 1.5rem;
+  }
+
+  .content2 p {
+    font-size: 1.5rem;
+    padding-left: 1em;
+  }
+  .content2 a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding-left: 1em;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: darkcyan;
   }
 
   .footer p {
