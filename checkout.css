@@ -8,14 +8,15 @@
 
 html {
   font-family: "Poppins", "sans-serif";
-  background-color: #fff;
+  background-color: gainsboro;
+  overflow: scroll;
 }
 
 .container {
   height: 100vh;
   width: 100vw;
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   grid-template-rows: repeat(auto-fill, 1fr);
 }
 
@@ -85,64 +86,61 @@ html {
 
 /* CONTENT SECTION */
 
-.container .checkout-1 {
-  display: flex;
-  grid-column: 2 / 6;
-  grid-row: 10;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  gap: 1rem;
-  background-color: black;
-  padding-left: 2em;
-  padding-right: 2em;
-  padding-top: 2em;
-  padding-bottom: 2em;
-}
-.checkout-1 img {
-  grid-column: 1 / -1;
-  width: 10rem;
-}
-.checkout-1 h2 {
-  font-size: 1.5rem;
-  color: #fff;
-}
-
-.checkout-1 p {
-  font-size: 1.3rem;
-  color: #fff;
-}
-
-.checkout-2 {
+.shoppingcart-elephant {
   display: flex;
   flex-direction: column;
-  grid-column: 8 / 11;
-  grid-row: 10;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
+  grid-column: 2 / 4;
+  grid-row: 6 / 7;
+  background-color: darkturquoise;
 }
 
-.checkout-2 h2 {
-  color: black;
+.shoppingcart-elephant img {
+  width: 10rem;
 }
 
-.text {
-  padding: 0.4rem;
-  border: 0.2rem solid black;
+.shoppingcart-brocc {
+  display: flex;
+  flex-direction: column;
+  grid-column: 2 / 4;
+  grid-row: 8 / 11;
+  justify-content: center;
+  align-items: center;
+  background-color:darkturquoise;
+}
+
+.shoppingcart-brocc img {
+  width: 10rem;
+}
+
+.total-sum {
+  display: flex;
+  flex-direction: column;
+  grid-column: 5 / 9;
+  grid-row: 6 / 11;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: darkturquoise;
+}
+
+.total-sum h2 {
+  font-size: 2rem;
+}
+
+.total-sum p {
+  font-size: 1.5rem;
+}
+
+.go-to-checkout {
+  padding: 1rem;
+  border: transparent;
   border-radius: 0.4rem;
-  color: black;
-  outline: 0;
-  text-align: center;
 }
 
-.submit {
-  padding: 0.6rem;
+.go-to-checkout a {
+  text-decoration: none;
   color: black;
-  border-radius: 0.4rem;
-  border: 0.2rem solid black;
-  background-color: #fff;
-  font-size: 1rem;
 }
 
 /* FOOTER SECTION */
@@ -154,7 +152,7 @@ html {
   font-size: 2rem;
 
   grid-column: 1 / -1;
-  grid-row: 20;
+  grid-row: 12;
   background-color: darkturquoise;
 }
 
@@ -199,48 +197,6 @@ html {
     font-size: 1rem;
   }
 
-  .content1 {
-    display: flex;
-    grid-column: 1 / -1;
-    grid-row: 6 / 10;
-    justify-content: center;
-    align-content: center;
-    background-image: url(./images/grogu.webp);
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-
-  .content1 a {
-    font-size: 2rem;
-    text-decoration: none;
-    color: black;
-  }
-
-  .searchbar {
-    padding-left: 3em;
-  }
-
-  .content2 {
-    display: flex;
-    flex-direction: row;
-    grid-column: 1 / -1;
-    grid-row: 11 / 12;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-  }
-
-  .content2 p {
-    font-size: 1.5rem;
-    padding-left: 2em;
-  }
-  .content2 a {
-    text-decoration: none;
-    font-size: 1.5rem;
-    padding-left: 2em;
-  }
-
   .footer {
     display: flex;
     flex-direction: row;
@@ -276,37 +232,6 @@ html {
     font-size: 2rem;
   }
 
-  .content1 {
-    display: flex;
-    grid-column: 1 / -1;
-    grid-row: 6 / 10;
-    justify-content: center;
-    align-content: center;
-    background-image: url(./images/grogu.webp);
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-
-  .content1 a {
-    font-size: 2rem;
-    text-decoration: none;
-    color: black;
-  }
-  .deals {
-    grid-column: 6 / 8;
-    grid-row: 10;
-  }
-  .content2 {
-    display: flex;
-    flex-direction: column;
-    grid-column: 1 / -1;
-    grid-row: 11 / 12;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-  }
-
   .container .menu {
     display: flex;
     justify-content: center;
@@ -315,16 +240,6 @@ html {
 
   .container .menu a {
     font-size: 1rem;
-  }
-
-  .content2 p {
-    font-size: 1.5rem;
-    padding-left: 1em;
-  }
-  .content2 a {
-    text-decoration: none;
-    font-size: 1.5rem;
-    padding-left: 1em;
   }
 
   .footer {
@@ -358,37 +273,6 @@ html {
     font-size: 2rem;
   }
 
-  .content1 {
-    display: flex;
-    grid-column: 1 / -1;
-    grid-row: 6 / 10;
-    justify-content: center;
-    align-content: center;
-    background-image: url(./images/grogu.webp);
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-
-  .content1 a {
-    font-size: 2rem;
-    text-decoration: none;
-    color: black;
-  }
-  .deals {
-    grid-column: 6 / 8;
-    grid-row: 10;
-  }
-  .content2 {
-    display: flex;
-    flex-direction: column;
-    grid-column: 1 / -1;
-    grid-row: 11 / 12;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-  }
-
   .container .menu {
     display: flex;
     justify-content: center;
@@ -399,22 +283,11 @@ html {
     font-size: 1.5rem;
   }
 
-  .content2 p {
-    font-size: 1.5rem;
-    padding-left: 1em;
-  }
-  .content2 a {
-    text-decoration: none;
-    font-size: 1.5rem;
-    padding-left: 1em;
-  }
-
   .footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: darkcyan;
   }
 
   .footer p {

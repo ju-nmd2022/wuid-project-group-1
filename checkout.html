@@ -14,7 +14,7 @@
     <link rel="stylesheet" type="text/css" href="./checkout.css" />
     <script src="index.js" defer></script>
 
-    <title>Playful | Check-out</title>
+    <title>Playful | Shopping Cart</title>
   </head>
   <body>
     <div class="container">
@@ -55,49 +55,29 @@
 
       <!-- CONTENT SECTION -->
 
-      <div class="checkout-1">
-        <img src="./images/elephant.jpeg" alt="" />
-        <h2>You have one item in your cart.</h2>
-        <p>Item specification - Bobbo 299sek</p>
-        <p>Shipping cost - 0.00sek</p>
-        <p>Total - 299sek</p>
+      <div class="shoppingcart-elephant">
+        <h2>SHOPPING CART</h2>
+        <img src="./images/elephant.jpeg" alt="plush toy" />
+        <p>Bobbo, Plush Toy</p>
+        <p>299sek</p>
       </div>
 
-      <div class="checkout-2">
-        <h2>Contact information</h2>
-        <input
-          type="text"
-          class="text"
-          placeholder="email.."
-          name="email"
-          id="email"
-        />
-        <input
-          type="text"
-          class="text"
-          placeholder="full name.."
-          name="name"
-          id="name"
-        />
-        <input
-          type="text"
-          class="text"
-          placeholder="country"
-          name="country"
-          id="country"
-        />
-        <input
-          type="text"
-          class="text"
-          placeholder="zip code"
-          name="zip"
-          id="zip"
-        />
-        <button type="submit" class="submit" id="searchbutton">
-          <p>Complete purchase</p>
+      <div class="shoppingcart-brocc">
+        <img src="./images/broccoli.jpg" alt="plush toy" />
+        <p>Brocc, Plush Toy</p>
+        <p>299sek</p>
+      </div>
+
+      <div class="total-sum">
+        <h2>TOTAL SUM</h2>
+        <p>Sub total - 598 sek</p>
+        <p>Shipping - 42 sek</p>
+        <p>Total Sum - 640 sek</p>
+
+        <button class="go-to-checkout">
+          <a href="#"><p>Go to check out</p></a>
         </button>
       </div>
-
       <!-- FOOTER SECTION -->
 
       <div class="footer">
