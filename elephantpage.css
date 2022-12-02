@@ -1,0 +1,386 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: "Poppins", "sans-serif";
+  background-color: white;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+}
+
+/* HERO SECTION */
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  grid-column: 1 / -1;
+  grid-row: 1 / 4;
+
+  background-image: url(./images/party.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+}
+
+.hero h1 {
+  display: flex;
+  padding-left: 0.2em;
+  font-size: 4rem;
+}
+
+.hero ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  justify-content: space-between;
+  padding-right: 2em;
+  gap: 1em;
+}
+
+.hero a {
+  font-size: 2rem;
+  color: white;
+}
+
+.hero a:hover {
+  color: yellow;
+}
+
+/* MENU SECTION */
+
+.container .menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  background-color: darkturquoise;
+  grid-column: 1 / -1;
+  grid-row: 4;
+  gap: 2em;
+}
+
+.container .menu a {
+  font-size: 2rem;
+  text-decoration: none;
+  color: black;
+}
+
+.container .menu a:hover {
+  color: yellow;
+}
+
+/* CONTENT SECTION */
+.elephantimages{
+    grid-column: 3 / 7;
+    grid-row: 5 / 12;
+    display: flex;
+    flex-wrap: wrap;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+.bigelephantimg{
+    max-width: 450px;
+}
+.smallelephant{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.smallelephantimg{
+    max-width: 100px;
+}
+
+.textarea {
+    background-color: gainsboro;
+    grid-column: 9 / 13;
+    grid-row: 5 / 13;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    text-align: center;
+    align-items: center;
+    padding: 5rem 0 0 0;
+}
+.cute {
+    padding-top: 1rem;
+}
+
+.shoppingcartbutton {
+    position:relative;
+    top: 4rem;
+    width: 20rem;
+    height: 3rem;
+    border-radius: 1rem;
+    outline: 0;
+    border: 0;
+    background-color: rgb(182, 204, 244);
+    cursor: pointer;
+}
+.shoppingcartbutton p{
+    font-size: 20pt;
+}
+/* .text {
+    grid-column: 10 / 12;
+    grid-row: 6 / 12;
+    background-color: blue;
+} */
+
+
+/* FOOTER SECTION */
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 2rem;
+
+  grid-column: 1 / -1;
+  grid-row: -1;
+  background-color: darkturquoise;
+}
+
+.footer p {
+  padding-left: 0.5em;
+  font-size: 1.5rem;
+}
+
+.footer ul a {
+  color: black;
+  padding-right: 0.5em;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.footer ul a:hover {
+  color: yellow;
+}
+
+.footer ul li {
+  list-style-type: none;
+}
+
+@media screen and (max-width: 480px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero a {
+    font-size: 1.5rem;
+  }
+
+  .container .menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 0.5em;
+  }
+
+  .container .menu a {
+    font-size: 1rem;
+  }
+
+
+  .footer {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer p {
+    font-size: 1rem;
+    padding-left: 0.5em;
+  }
+
+  .container .footer ul a {
+    font-size: 1rem;
+    padding-right: 0.5em;
+    color: black;
+    flex-direction: row;
+    text-decoration: none;
+  }
+
+  .container .footer ul li {
+    list-style-type: none;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .hero h1 {
+    font-size: 3rem;
+  }
+
+  .hero a {
+    font-size: 2rem;
+  }
+
+  .content1 {
+    display: flex;
+    grid-column: 1 / -1;
+    grid-row: 6 / 10;
+    justify-content: center;
+    align-content: center;
+    background-image: url(./images/grogu.webp);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .content1 a {
+    font-size: 2rem;
+    text-decoration: none;
+    color: black;
+  }
+  .deals {
+    grid-column: 6 / 8;
+    grid-row: 10;
+  }
+  .content2 {
+    display: flex;
+    flex-direction: column;
+    grid-column: 1 / -1;
+    grid-row: 11 / 12;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+  }
+
+  .container .menu {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+  }
+
+  .container .menu a {
+    font-size: 1rem;
+  }
+
+  .content2 p {
+    font-size: 1.5rem;
+    padding-left: 1em;
+  }
+  .content2 a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding-left: 1em;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer p {
+    font-size: 1rem;
+    padding-left: 0.5em;
+  }
+
+  .container .footer ul a {
+    font-size: 1rem;
+    padding-right: 0.5em;
+    color: black;
+    flex-direction: row;
+    text-decoration: none;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .hero h1 {
+    font-size: 3rem;
+  }
+
+  .hero a {
+    font-size: 2rem;
+  }
+
+  .content1 {
+    display: flex;
+    grid-column: 1 / -1;
+    grid-row: 6 / 10;
+    justify-content: center;
+    align-content: center;
+    background-image: url(./images/grogu.webp);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .content1 a {
+    font-size: 2rem;
+    text-decoration: none;
+    color: black;
+  }
+  .deals {
+    grid-column: 6 / 8;
+    grid-row: 10;
+  }
+  .content2 {
+    display: flex;
+    flex-direction: column;
+    grid-column: 1 / -1;
+    grid-row: 11 / 12;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+  }
+
+  .container .menu {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+  }
+
+  .container .menu a {
+    font-size: 1.5rem;
+  }
+
+  .content2 p {
+    font-size: 1.5rem;
+    padding-left: 1em;
+  }
+  .content2 a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding-left: 1em;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer p {
+    font-size: 1.5rem;
+    padding-left: 0.5em;
+  }
+
+  .container .footer ul a {
+    font-size: 1.5rem;
+    padding-right: 0.5em;
+    color: black;
+    flex-direction: row;
+    text-decoration: none;
+  }
+}
