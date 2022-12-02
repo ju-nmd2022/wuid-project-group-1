@@ -88,26 +88,23 @@ html {
 .infobox {
   display: flex;
   flex-direction: column;
-  grid-column: 1/ -1;
-  grid-row: 5 / 8;
-  padding-top: 2rem;
+  grid-column: 1/ 4;
+  grid-row: 5 / 12;
+  padding-top: 1em;
+  padding-left: 1em;
+  gap: 0.5rem;
 }
 .infobox h2 {
   display: flex;
-  justify-content: center;
-  grid-column: 1 / -1;
+  grid-column: 1 / 4;
   font-size: 2.5rem;
 }
 
-.infobox h3 {
+.infobox p {
   display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
-  justify-content: center;
-  text-align: center;
+  flex-direction: column;
   font-size: 1.5rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
 }
 
 main {
@@ -115,8 +112,8 @@ main {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  grid-column: 1 / -1;
-  grid-row: 8 / 12;
+  grid-column: 4 / -1;
+  grid-row: 5 / 12;
   /* justify-content: space-between; */
 }
 
