@@ -9,10 +9,13 @@
 html {
   font-family: "Poppins", "sans-serif";
   background-color: #fff;
+
+  /* use this one to see the layout more easily while coding */
+  /* background-color: blue; */
 }
 
 .container {
-  height: 100vh;
+  min-height: 100vh;
   width: 100vw;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -33,6 +36,7 @@ html {
   background-size: cover;
   background-position: center;
   width: 100%;
+  min-height: 230px;
 }
 
 .hero h1 {
@@ -112,7 +116,7 @@ main {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  grid-column: 4 / -1;
+  grid-column: 4 / 11;
   grid-row: 5 / 12;
   /* justify-content: space-between; */
 }
@@ -123,20 +127,22 @@ section {
   align-items: center;
   padding: 1.5rem;
   padding-bottom: 2.5rem;
+  width: 200px;
+  height: 350px;
 }
 section img {
   max-width: 200px;
 }
 
-section a {
-  padding: 0.5rem;
+/* section a {
+  padding: 1.5rem;
+  padding-bottom: 2.5rem;
   font-size: 1.2rem;
   text-decoration: none;
-  color: black;
-}
+} */
 
 section p {
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 /* FOOTER SECTION */
@@ -289,36 +295,6 @@ section p {
     font-size: 2rem;
   }
 
-  .content1 {
-    display: flex;
-    grid-column: 1 / -1;
-    grid-row: 6 / 10;
-    justify-content: center;
-    align-content: center;
-    background-image: url(./images/grogu.webp);
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-
-  .content1 a {
-    font-size: 2rem;
-    text-decoration: none;
-    color: black;
-  }
-  .deals {
-    grid-column: 6 / 8;
-    grid-row: 10;
-  }
-  .content2 {
-    display: flex;
-    flex-direction: column;
-    grid-column: 1 / -1;
-    grid-row: 11 / 12;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-  }
 
   .container .menu {
     display: flex;
