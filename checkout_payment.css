@@ -1,0 +1,438 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: "Poppins", "sans-serif";
+  background-color: #fff;
+  overflow: scroll;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  grid-template-rows: repeat(auto-fill, 1fr);
+}
+
+/* HERO SECTION */
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  grid-column: 1 / -1;
+  grid-row: 1 / 4;
+
+  background-image: url(./images/party.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  min-height: 230px;
+}
+
+.hero h1 {
+  display: flex;
+  padding-left: 0.2em;
+  font-size: 4rem;
+}
+
+.hero ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  justify-content: space-between;
+  padding-right: 2em;
+  gap: 1em;
+}
+
+.hero a {
+  font-size: 2rem;
+  color: black;
+}
+
+.hero a:hover {
+  color: yellow;
+}
+
+/* MENU SECTION */
+
+.container .menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #0098ff;
+  grid-column: 1 / -1;
+  grid-row: 4;
+  gap: 2em;
+}
+
+.container .menu a {
+  font-size: 2rem;
+  text-decoration: none;
+  color: black;
+}
+
+.container .menu a:hover {
+  color: yellow;
+}
+
+/* CONTENT SECTION */
+
+.content-container {
+  display: flex;
+  grid-column: 5 / 14;
+  grid-row: 5 / 24;
+  background-color: #d9d9d9;
+}
+
+/* FOOTER SECTION */
+
+/* saasdasdasd */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 2rem;
+
+  grid-column: 1 / -1;
+  grid-row: 24;
+  background-color: #0098ff;
+}
+
+.footer p {
+  padding-left: 0.5em;
+  font-size: 1.5rem;
+}
+
+.footer ul a {
+  color: black;
+  padding-right: 0.5em;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.footer ul a:hover {
+  color: yellow;
+}
+
+.footer ul li {
+  list-style-type: none;
+}
+
+@media screen and (max-width: 480px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero a {
+    font-size: 1.5rem;
+  }
+
+  .container .menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 0.5em;
+  }
+
+  .container .menu a {
+    font-size: 1rem;
+  }
+
+  .shoppingcart-elephant {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-column: 1 / -1;
+    background-color: gainsboro;
+    padding: 1rem;
+  }
+
+  .shoppingcart-elephant img {
+    width: 10rem;
+  }
+
+  .shoppingcart-brocc {
+    display: flex;
+    flex-direction: column;
+    grid-column: 1 / -1;
+    grid-row: 8;
+    justify-content: center;
+    align-items: center;
+    background-color: gainsboro;
+    padding: 1rem;
+  }
+
+  .shoppingcart-brocc img {
+    width: 10rem;
+  }
+
+  .total-sum {
+    display: flex;
+    flex-direction: column;
+    grid-column: 1 / -1;
+    grid-row: 10;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: gainsboro;
+    padding: 1rem;
+  }
+
+  .total-sum h2 {
+    font-size: 1.4rem;
+  }
+
+  .total-sum p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+  }
+
+  .go-to-checkout {
+    padding: 0.5rem;
+    border: transparent;
+    border-radius: 0.4rem;
+    background-color: #0098ff;
+  }
+
+  .go-to-checkout a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer p {
+    font-size: 1rem;
+    padding-left: 0.5em;
+  }
+
+  .container .footer ul a {
+    font-size: 1rem;
+    padding-right: 0.5em;
+    color: black;
+    flex-direction: row;
+    text-decoration: none;
+  }
+
+  .container .footer ul li {
+    list-style-type: none;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .hero h1 {
+    font-size: 3rem;
+  }
+
+  .hero a {
+    font-size: 2rem;
+  }
+
+  .container .menu {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+  }
+
+  .container .menu a {
+    font-size: 1rem;
+  }
+
+  .shoppingcart-elephant {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-column: 1 / -1;
+    grid-row: 6;
+    background-color: gainsboro;
+    padding: 2rem;
+  }
+
+  .shoppingcart-elephant img {
+    width: 10rem;
+  }
+
+  .shoppingcart-brocc {
+    display: flex;
+    flex-direction: column;
+    grid-column: 1 / -1;
+    grid-row: 8;
+    justify-content: center;
+    align-items: center;
+    background-color: gainsboro;
+    padding: 2rem;
+  }
+
+  .shoppingcart-brocc img {
+    width: 10rem;
+  }
+
+  .total-sum {
+    display: flex;
+    flex-direction: column;
+    grid-column: 1 / -1;
+    grid-row: 10;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: gainsboro;
+    padding: 2rem;
+  }
+
+  .total-sum h2 {
+    font-size: 1.4rem;
+  }
+
+  .total-sum p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+  }
+
+  .go-to-checkout {
+    padding: 0.5rem;
+    border: transparent;
+    border-radius: 0.4rem;
+    background-color: #0098ff;
+  }
+
+  .go-to-checkout a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer p {
+    font-size: 1rem;
+    padding-left: 0.5em;
+  }
+
+  .container .footer ul a {
+    font-size: 1rem;
+    padding-right: 0.5em;
+    color: black;
+    flex-direction: row;
+    text-decoration: none;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .hero h1 {
+    font-size: 3rem;
+  }
+
+  .hero a {
+    font-size: 2rem;
+  }
+
+  .container .menu {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+  }
+
+  .container .menu a {
+    font-size: 1.5rem;
+  }
+
+  .shoppingcart-elephant {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-column: 1 / 3;
+    grid-row: 6 / 7;
+    background-color: gainsboro;
+  }
+
+  .shoppingcart-elephant img {
+    width: 10rem;
+  }
+
+  .shoppingcart-brocc {
+    display: flex;
+    flex-direction: column;
+    grid-column: 1 / 3;
+    grid-row: 8 / 11;
+    justify-content: center;
+    align-items: center;
+    background-color: gainsboro;
+  }
+
+  .shoppingcart-brocc img {
+    width: 10rem;
+  }
+
+  .total-sum {
+    display: flex;
+    flex-direction: column;
+    grid-column: 4 / 6;
+    grid-row: 6 / 11;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: gainsboro;
+  }
+
+  .total-sum h2 {
+    font-size: 2rem;
+  }
+
+  .total-sum p {
+    font-size: 1.5rem;
+  }
+
+  .go-to-checkout {
+    padding: 1rem;
+    border: transparent;
+    border-radius: 0.4rem;
+    background-color: #0098ff;
+  }
+
+  .go-to-checkout a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer p {
+    font-size: 1.5rem;
+    padding-left: 0.5em;
+  }
+
+  .container .footer ul a {
+    font-size: 1.5rem;
+    padding-right: 0.5em;
+    color: black;
+    flex-direction: row;
+    text-decoration: none;
+  }
+}
