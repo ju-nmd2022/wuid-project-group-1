@@ -92,6 +92,7 @@ html {
     flex-wrap: wrap;
     /* align-items: center; */
     justify-content: center;
+    max-width: 450px;
 }
 
 .bigelephantimg{
@@ -102,7 +103,7 @@ html {
     padding-right: 1rem;
 }
 .smallelephantimg{
-    max-width: 100px;
+    max-width: 80px;
 }
 
 .textarea {
