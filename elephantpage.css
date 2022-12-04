@@ -93,6 +93,7 @@ html {
     /* align-items: center; */
     justify-content: center;
     max-width: 450px;
+    padding-top: 1rem;
 }
 
 .bigelephantimg{
@@ -119,6 +120,10 @@ html {
 }
 .cute {
     padding-top: 1rem;
+}
+
+.hearticon{
+    padding-top: 2rem;
 }
 
 .shoppingcartbutton {
