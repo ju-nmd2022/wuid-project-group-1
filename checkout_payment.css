@@ -16,8 +16,8 @@ html {
   height: 100vh;
   width: 100vw;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-  grid-template-rows: repeat(auto-fill, 1fr);
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
 }
 
 /* HERO SECTION */
@@ -87,16 +87,42 @@ html {
 
 /* CONTENT SECTION */
 
-.content-container {
-  display: flex;
-  grid-column: 5 / 14;
+.parent {
+  padding: 1%;
+  display: grid;
+  grid-column: 1 / 14;
   grid-row: 5 / 24;
+  border: solid 3px red;
+  justify-content: center;
   background-color: #d9d9d9;
+}
+
+.content-box {
+  border: solid 3px yellow;
+  width: 1500px;
+  background-color: white;
+}
+
+.shipping {
+  border: solid 3px pink;
+}
+
+.shipping-1 {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  border: solid 3px blue;
+}
+
+.shipping-2 {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  border: solid 3px green;
 }
 
 /* FOOTER SECTION */
 
-/* saasdasdasd */
 .footer {
   display: flex;
   justify-content: space-between;
