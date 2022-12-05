@@ -15,7 +15,7 @@ html {
   height: 100vh;
   width: 100vw;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(12, 1fr);
 }
 
@@ -27,13 +27,12 @@ html {
   align-items: center;
 
   grid-column: 1 / -1;
-  grid-row: 1 / 3;
+  grid-row: 1 / 4;
 
   background-image: url(./images/party.jpg);
   background-size: cover;
   background-position: center;
   width: 100%;
-  min-height: 230px;
 }
 
 .hero h1 {
@@ -70,7 +69,7 @@ html {
 
   background-color: darkturquoise;
   grid-column: 1 / -1;
-  grid-row: 3;
+  grid-row: 4;
   gap: 2em;
 }
 
@@ -165,17 +164,17 @@ button .menu {
   grid-row: 5 / 12;
   justify-content: center;
   align-items: center;
-  gap: 0.5rem;
   color: black;
-  padding-right: 2em;
+  padding-top: 6em;
 }
 
 .content2 p {
+  font-size: 32pt;
   color: black;
 }
 
 .dealimg {
-  width: 8rem;
+  width: 10rem;
 }
 
 .searchbar #searchbar {
@@ -183,8 +182,8 @@ button .menu {
   border: transparent;
   border-radius: 0.3rem;
   text-align: center;
-  padding-top: 0.1rem;
-  padding-bottom: 0.1rem;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
   border: 0.2rem solid black;
 }
 
@@ -193,19 +192,22 @@ button .menu {
   border: 0.2rem solid black;
   border-radius: 0.2rem;
   background-color: #fff;
-  padding-top: 0.1rem;
-  padding-bottom: 0.1rem;
-  padding-left: 0.2rem;
-  padding-right: 0.2rem;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+  padding-left: 0.3rem;
+  padding-right: 0.3rem;
+}
+.searchbar {
+  padding-bottom: 2rem;
 }
 
 .content2 p {
-  font-size: 2rem;
+  font-size: 28pt;
 }
 
 .content2 a {
-  font-size: 2rem;
-  text-decoration: none;
+  font-size: 28pt;
+  text-decoration: underline;
   color: black;
 }
 
