@@ -127,8 +127,6 @@ section {
   align-items: center;
   padding: 1.5rem;
   padding-bottom: 2.5rem;
-  width: 200px;
-  height: 350px;
 }
 section img {
   max-width: 200px;
@@ -246,7 +244,7 @@ section p {
     padding-bottom: 2.5rem;
   }
   section img {
-    max-width: 200px;
+    max-width: 350px;
   }
 
   section a {
@@ -294,7 +292,6 @@ section p {
   .hero a {
     font-size: 2rem;
   }
-
 
   .container .menu {
     display: flex;
