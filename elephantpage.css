@@ -17,7 +17,7 @@ html {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(12, 1fr);
+  grid-template-rows: repeat(15, 1fr);
 }
 
 /* HERO SECTION */
@@ -110,7 +110,7 @@ html {
 .textarea {
   background-color: gainsboro;
   grid-column: 8 / -1;
-  grid-row: 5 / 13;
+  grid-row: 5 / 16;
   display: flex;
   flex-direction: column;
   /* justify-content: center; */
@@ -187,6 +187,8 @@ html {
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     grid-template-rows: repeat(auto-fill, minmax(150px, 1fr));
   }
+
+  
 
   .hero h1 {
     font-size: 2.5rem;

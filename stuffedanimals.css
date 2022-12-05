@@ -242,6 +242,7 @@ section p {
     align-items: center;
     padding: 1.5rem;
     padding-bottom: 2.5rem;
+    /* height: 500px; */
   }
   section img {
     max-width: 350px;
