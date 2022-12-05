@@ -180,6 +180,14 @@ html {
 }
 
 @media screen and (max-width: 480px) {
+  .container {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-rows: repeat(auto-fill, minmax(150px, 1fr));
+  }
+
   .hero h1 {
     font-size: 2.5rem;
   }
@@ -200,11 +208,84 @@ html {
     font-size: 1rem;
   }
 
+  .elephantimages {
+    grid-column: 1 / -1;
+    grid-row: 5 / 8;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 1em;
+    padding-bottom: 1rem;
+    /* align-items: center; */
+  }
+
+  .bigelephantimg {
+    max-width: 400px;
+  }
+  .smallelephant {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .smallelephantimg {
+    max-width: 60px;
+  }
+
+  .textarea {
+    background-color: gainsboro;
+    grid-column: 1 / -1;
+    grid-row: 8 / 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 8em;
+    padding-left: 2em;
+    padding-right: 2em;
+    /* justify-content: center; */
+  }
+
+  .textarea p {
+    font-size: 1.5rem;
+  }
+
+
+  .textarea h2 {
+    font-size: 2.5rem;
+  }
+
+  .textarea h3 {
+    font-size: 2rem;
+    padding-top: 1rem;
+  }
+
+  .cute {
+    font-size: 1.5rem;
+    padding-top: 2rem;
+  }
+
+  .hearticon {
+    padding-top: 2rem;
+  }
+
+  .shoppingcartbutton {
+    position: relative;
+    width: 12rem;
+    height: 2.5rem;
+    border-radius: 1rem;
+    outline: 0;
+    border: 0;
+    background-color: rgb(182, 204, 244);
+    cursor: pointer;
+  }
+  .shoppingcartbutton p {
+    font-size: 18pt;
+  }
+
   .footer {
     display: flex;
     flex-direction: row;
     grid-column: 1 / -1;
-    grid-row: -1;
+    grid-row: 12;
 
     justify-content: space-between;
     align-items: center;
