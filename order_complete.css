@@ -1,0 +1,315 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: "Poppins", "sans-serif";
+  background-color: #fff;
+
+  /* use this one to see the layout more easily while coding */
+  /* background-color: blue; */
+}
+
+.container {
+  min-height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+}
+
+/* HERO SECTION */
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  grid-column: 1 / -1;
+  grid-row: 1 / 4;
+
+  background-image: url(./images/party.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  min-height: 230px;
+}
+
+.hero h1 {
+  display: flex;
+  padding-left: 0.2em;
+  font-size: 5rem;
+}
+
+.hero ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  justify-content: space-between;
+  padding-right: 2em;
+  gap: 1em;
+}
+
+.hero a {
+  font-size: 2rem;
+  color: white;
+}
+
+.hero a:hover {
+  color: yellow;
+}
+
+/* MENU SECTION */
+
+.container .menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  background-color: darkturquoise;
+  grid-column: 1 / -1;
+  grid-row: 4;
+  gap: 2em;
+}
+
+.container .menu a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: black;
+}
+
+.container .menu a:hover {
+  color: yellow;
+}
+
+/* CONTENT SECTION */
+
+.infobox {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  grid-column: 1/ -1;
+  grid-row: 5 / 13;
+  gap: 1em;
+}
+
+.infobox h2 {
+  display: flex;
+  font-size: 3rem;
+}
+
+.infobox p {
+  line-height: 2;
+  font-size: 1.5rem;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  grid-column: 4 / -1;
+  grid-row: 5 / 12;
+  /* justify-content: space-between; */
+}
+
+/* FOOTER SECTION */
+
+/* https://www.geeksforgeeks.org/how-to-create-footer-to-stay-at-the-bottom-of-a-web-page/ */
+
+.footer {
+  grid-column: 1 / -1;
+  grid-row: 13;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 2rem;
+
+  /* grid-column: 1 / -1;
+  grid-row: 20; */
+  background-color: darkturquoise;
+}
+
+.footer p {
+  padding-left: 0.5em;
+  font-size: 1.5rem;
+}
+
+.footer ul a {
+  color: black;
+  padding-right: 0.5em;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.footer ul a:hover {
+  color: yellow;
+}
+
+.footer ul li {
+  list-style-type: none;
+}
+
+@media screen and (max-width: 480px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero a {
+    font-size: 1.5rem;
+  }
+
+  .container .menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 0.5em;
+  }
+
+  .container .menu a {
+    font-size: 1rem;
+  }
+
+  .infobox {
+    display: flex;
+    flex-direction: column;
+    grid-column: 1/ -1;
+    grid-row: 5;
+    padding-top: 1em;
+    padding-left: 1em;
+    gap: 1rem;
+  }
+  .infobox h2 {
+    display: flex;
+    justify-content: center;
+    grid-column: 1 / -1;
+    font-size: 2rem;
+  }
+
+  .infobox p {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 1.5rem;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+  }
+
+  main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    grid-column: 1 / -1;
+    grid-row: 6 / 12;
+    /* justify-content: space-between; */
+  }
+
+  section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem;
+    padding-bottom: 2.5rem;
+    /* height: 500px; */
+  }
+  section img {
+    max-width: 350px;
+  }
+
+  section a {
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: black;
+  }
+
+  section p {
+    font-size: 1.5rem;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer p {
+    font-size: 1.5rem;
+    padding-left: 0.5em;
+  }
+
+  .container .footer ul a {
+    font-size: 1.5rem;
+    padding-right: 0.5em;
+    color: black;
+    flex-direction: row;
+    text-decoration: none;
+  }
+
+  .container .footer ul li {
+    list-style-type: none;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .hero h1 {
+    font-size: 3rem;
+  }
+
+  .hero a {
+    font-size: 2rem;
+  }
+
+  .container .menu {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+  }
+
+  .container .menu a {
+    font-size: 1.5rem;
+  }
+
+  .content2 p {
+    font-size: 1.5rem;
+    padding-left: 1em;
+  }
+  .content2 a {
+    text-decoration: none;
+    color: yellow;
+    font-size: 1.5rem;
+    padding-left: 1em;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer p {
+    font-size: 1.5rem;
+    padding-left: 0.5em;
+  }
+
+  .container .footer ul a {
+    font-size: 1.5rem;
+    padding-right: 0.5em;
+    color: black;
+    flex-direction: row;
+    text-decoration: none;
+  }
+}
