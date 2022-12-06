@@ -56,7 +56,7 @@ html {
 }
 
 .hero a:hover {
-  color: yellow;
+  color: white;
 }
 
 /* MENU SECTION */
@@ -79,6 +79,10 @@ html {
   text-decoration: none;
   color: black;
   list-style-type: none;
+}
+
+.container .menu a:hover {
+color: white;
 }
 
 /* CONTENT SECTION */
@@ -287,7 +291,7 @@ html {
     border-radius: 1em;
     outline: 0;
     border: 0;
-    background-color: rgb(182, 204, 244);
+    background-color: darkturquoise;
     cursor: pointer;
     text-align: center;
   }

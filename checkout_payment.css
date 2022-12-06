@@ -58,7 +58,7 @@ html {
 }
 
 .hero a:hover {
-  color: yellow;
+  color: white;
 }
 
 /* MENU SECTION */
@@ -82,7 +82,7 @@ html {
 }
 
 .container .menu a:hover {
-  color: yellow;
+  color: white;
 }
 
 /* CONTENT SECTION */
@@ -124,9 +124,6 @@ html {
   /* border: solid 3px green; */
 }
 
-.payment {
-  /* border: solid 3px orange; */
-}
 
 .payment-info {
   background-color: #d9d9d9;
@@ -135,17 +132,15 @@ html {
   gap: 16%;
 }
 
-.payment-left {
-  /* border: solid 1px green; */
-}
-
-.payment-right {
-  /* border: solid 1px yellow; */
-}
 
 .confirm-button {
+  width: 20em;
+  height: 4rem;
+  border-radius: 1rem;
+  outline: 0;
+  border: 0;
   background-color: darkturquoise;
-  padding: 1%;
+  cursor: pointer;
 }
 
 .confirm-button h1 {
@@ -221,6 +216,7 @@ html {
 }
 
 @media screen and (max-width: 480px) {
+  
   .hero h1 {
     font-size: 2.5rem;
   }
