@@ -17,7 +17,7 @@ html {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(15, 1fr);
+  grid-template-rows: repeat(12, 1fr);
 }
 
 /* HERO SECTION */
