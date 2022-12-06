@@ -124,9 +124,6 @@ html {
   /* border: solid 3px green; */
 }
 
-.payment {
-  /* border: solid 3px orange; */
-}
 
 .payment-info {
   background-color: #d9d9d9;
@@ -135,13 +132,6 @@ html {
   gap: 16%;
 }
 
-.payment-left {
-  /* border: solid 1px green; */
-}
-
-.payment-right {
-  /* border: solid 1px yellow; */
-}
 
 .confirm-button {
   width: 20em;
