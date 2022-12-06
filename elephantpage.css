@@ -13,11 +13,10 @@ html {
 }
 
 .container {
-  height: 100%;
-  width: 100%;
+  height: 100vh;
+  width: 100vw;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(12, 1fr);
 }
 
 /* HERO SECTION */
@@ -28,7 +27,7 @@ html {
   align-items: center;
 
   grid-column: 1 / -1;
-  grid-row: 1 / 4;
+  grid-row: 1 / 3;
 
   background-image: url(./images/party.jpg);
   background-size: cover;
@@ -70,8 +69,10 @@ html {
   align-items: center;
   background-color: darkturquoise;
   grid-column: 1 / -1;
-  grid-row: 4;
+  grid-row: 3 / 4;
   gap: 2rem;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
 }
 
 .container .menu a {
@@ -106,41 +107,43 @@ html {
 .textarea {
   background-color: gainsboro;
   grid-column: 8 / -1;
-  grid-row: 5 / 16;
+  grid-row: 4 / 12;
   display: flex;
   flex-direction: column;
   text-align: center;
   align-items: center;
-  padding: 5rem 0 0 0;
+  padding-top: 4em;
+  padding-bottom: 4em;
+  padding-left: 2em;
+  padding-right: 2em;
 }
 .cute {
   padding-top: 1rem;
 }
 
 .hearticon {
-  padding-top: 2rem;
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 
 .textarea p {
-  font-size: 20pt;
+  font-size: 2rem;
   padding-left: 2em;
   padding-right: 2em;
 }
 
 .textarea h2 {
-  font-size: 26pt;
+  font-size: 2.5rem;
 }
 
 .textarea h3 {
   padding-top: 0.5rem;
-  font-size: 22pt;
+  font-size: 2.5rem;
 }
 
 .shoppingcartbutton {
-  position: relative;
-  top: 4rem;
-  width: 20rem;
-  height: 3rem;
+  width: 20em;
+  height: 4rem;
   border-radius: 1rem;
   outline: 0;
   border: 0;
@@ -148,7 +151,7 @@ html {
   cursor: pointer;
 }
 .shoppingcartbutton p {
-  font-size: 20pt;
+  font-size: 1.5rem;
 }
 
 /* FOOTER SECTION */
@@ -160,7 +163,7 @@ html {
   font-size: 2rem;
 
   grid-column: 1 / -1;
-  grid-row: -1;
+  grid-row: 12;
   background-color: darkturquoise;
 }
 
@@ -186,11 +189,25 @@ html {
 
 @media screen and (max-width: 480px) {
   .container {
-    height: 100%;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    grid-template-rows: repeat(auto-fill, minmax(150px, 1fr));
+    grid-template-columns: repeat(12, 1fr);
+  }
+
+  .hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    grid-column: 1 / -1;
+    grid-row: 1 / 3;
+
+    background-image: url(./images/party.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    min-height: 10em;
   }
 
   .hero h1 {
@@ -202,19 +219,21 @@ html {
   }
 
   .container .menu {
+    grid-column: 1 / -1;
+    grid-row: 3 / 4;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 0.5em;
+    gap: 0.8em;
   }
 
   .container .menu a {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 
   .elephantimages {
     grid-column: 1 / -1;
-    grid-row: 5 / 8;
+    grid-row: 4;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -236,50 +255,42 @@ html {
   }
 
   .textarea {
-    background-color: gainsboro;
     grid-column: 1 / -1;
-    grid-row: 8 / 10;
+    grid-row: 5 / 11;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    padding-bottom: 8em;
-    padding-left: 2em;
-    padding-right: 2em;
-    /* justify-content: center; */
+    padding-bottom: 4em;
   }
 
   .textarea p {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
 
   .textarea h2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 
   .textarea h3 {
     font-size: 1.5rem;
-    padding-top: 1rem;
   }
 
   .cute {
     font-size: 1.5rem;
-    padding-top: 2rem;
   }
 
   .hearticon {
-    padding-top: 2rem;
+    padding-top: 1em;
+    padding-bottom: 1em;
   }
 
   .shoppingcartbutton {
-    position: relative;
-    width: 14rem;
+    width: 20em;
     height: 3rem;
     border-radius: 1em;
     outline: 0;
     border: 0;
     background-color: rgb(182, 204, 244);
     cursor: pointer;
+    text-align: center;
   }
   .shoppingcartbutton p {
     font-size: 1.5rem;
