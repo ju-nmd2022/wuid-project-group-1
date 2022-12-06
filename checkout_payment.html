@@ -80,26 +80,83 @@
             </div>
           </div>
           <h1>PAYMENT</h1>
-          <div class="payment">
-            <h1>TOTAL SUM</h1>
-            <div class="payment-info">
-              <p>
-                Sub Total&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; 598 kr
-              </p>
-              <p>
-                Shipping&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; 42 kr
-              </p>
-              <p>
-                <strong>
-                  Total Sum&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp; 640
-                  kr</strong
-                >
-              </p>
-              <a href="order_complete.html"
-                ><button class="confirm-button"><h1>CONFIRM</h1></button></a
-              >
+
+          <div class="round-button">
+            <div class="swish-box">
+              <input type="checkbox" />
+              <p>Swish</p>
+              <!-- <img
+                src="https://meta-info-service.payments-core.zalan.do/images/swish.svg"
+                alt=""
+              /> -->
+            </div>
+            <div class="card-box">
+              <input type="checkbox" />
+              <p>Card</p>
+              <!-- <img
+                src="https://meta-info-service.payments-core.zalan.do/images/visaelectron.svg"
+                alt=""
+              />
+              <img
+                src="https://meta-info-service.payments-core.zalan.do/images/visa.svg"
+                alt=""
+              />
+              <img
+                src="https://meta-info-service.payments-core.zalan.do/images/mastercard.svg"
+                alt=""
+              />
+              <img
+                src="https://meta-info-service.payments-core.zalan.do/images/americanexpress.svg"
+                alt=""
+              /> -->
+            </div>
+            <div class="card-info">
+              <label for="namOnCard">Name on card</label>
+              <input type="text" id="namOnCard" />
+              <label for="cardNumber">Card number</label>
+              <input type="text" id="cardNumber" />
+              <label for="validity">Validity</label>
+              <input type="text" id="validity" />
+              <label for="cvc">CVC</label>
+              <input type="text" id="cvc" />
+            </div>
+            <div class="paypal-box">
+              <input type="checkbox" />
+              <p>Paypal</p>
+              <!-- <img
+                src="https://meta-info-service.payments-core.zalan.do/images/paypal.svg"
+                alt=""
+              /> -->
+            </div>
+            <div class="invoice-box">
+              <input type="checkbox" />
+              <p>Invoice</p>
+              <!-- <img
+                src="https://meta-info-service.payments-core.zalan.do/images/invoice_sv.svg"
+                alt=""
+              /> -->
             </div>
           </div>
+          <h1>TOTAL SUM</h1>
+          <div class="payment">
+            <div class="payment-info">
+              <div class="payment-left">
+                <p>Sub Total</p>
+                <p>Shipping</p>
+                <p>
+                  <strong>Total Sum</strong>
+                </p>
+              </div>
+              <div class="payment-right">
+                <p>598 kr</p>
+                <p>42 kr</p>
+                <p>640 kr</p>
+              </div>
+            </div>
+          </div>
+          <a href="order_complete.html"
+            ><button class="confirm-button"><h1>CONFIRM</h1></button></a
+          >
         </div>
       </div>
 
