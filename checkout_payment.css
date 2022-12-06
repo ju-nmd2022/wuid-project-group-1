@@ -124,14 +124,12 @@ html {
   /* border: solid 3px green; */
 }
 
-
 .payment-info {
   background-color: #d9d9d9;
   width: 400px;
   display: flex;
   gap: 16%;
 }
-
 
 .confirm-button {
   width: 20em;
@@ -215,7 +213,39 @@ html {
   list-style-type: none;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 390px) {
+  .container {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+  }
+
+  .hero {
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero a {
+    font-size: 1.5rem;
+  }
+
+  .container .menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.8em;
+  }
+
+  .container .menu a {
+    font-size: 1rem;
+  }
+}
+
+/* @media screen and (max-width: 480px) {
   
   .hero h1 {
     font-size: 2.5rem;
@@ -322,9 +352,9 @@ html {
   .container .footer ul li {
     list-style-type: none;
   }
-}
+} */
 
-@media screen and (min-width: 481px) and (max-width: 768px) {
+/* @media screen and (min-width: 481px) and (max-width: 768px) {
   .hero h1 {
     font-size: 3rem;
   }
@@ -523,4 +553,4 @@ html {
     flex-direction: row;
     text-decoration: none;
   }
-}
+} */

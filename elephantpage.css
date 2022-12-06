@@ -82,7 +82,7 @@ html {
 }
 
 .container .menu a:hover {
-color: white;
+  color: white;
 }
 
 /* CONTENT SECTION */
@@ -198,7 +198,7 @@ color: white;
     grid-template-columns: repeat(12, 1fr);
   }
 
-  .hero {
+  /* .hero {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -211,10 +211,10 @@ color: white;
     background-position: center;
     width: 100%;
     min-height: 10em;
-  }
+  } */
 
   .hero h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
   .hero a {
@@ -222,16 +222,15 @@ color: white;
   }
 
   .container .menu {
-    grid-column: 1 / -1;
-    grid-row: 3 / 4;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 0.8em;
   }
 
   .container .menu a {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
   .elephantimages {
