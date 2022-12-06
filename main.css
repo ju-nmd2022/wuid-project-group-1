@@ -131,12 +131,16 @@ button .menu {
   display: flex;
   grid-column: 1 / 6;
   grid-row: 6 / 12;
+  border: yellow;
+  border: solid;
   justify-content: center;
   align-content: center;
-  background-image: url(./images/grogu.webp);
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
+}
+
+.slide{
+  width: 35rem;
+  border: #000;
+  border: solid;
 }
 
 .content1 a {
