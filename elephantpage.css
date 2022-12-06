@@ -33,7 +33,6 @@ html {
   background-size: cover;
   background-position: center;
   width: 100%;
-  min-height: 230px;
 }
 
 .hero h1 {
@@ -86,11 +85,11 @@ html {
 
 .elephantimages {
   grid-column: 2 / 6;
-  grid-row: 5 / 14;
+  grid-row: 5 / 11;
+
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  /* padding: 1%; */
 }
 
 .bigelephantimg {
