@@ -57,7 +57,7 @@ html {
 }
 
 .hero a:hover {
-  color: yellow;
+  color: white;
 }
 
 /* MENU SECTION */
@@ -81,7 +81,7 @@ html {
 }
 
 .container .menu a:hover {
-  color: yellow;
+  color: white;
 }
 
 /* CONTENT SECTION */
@@ -119,10 +119,13 @@ html {
 }
 
 .go-to-checkout {
-  padding: 1rem;
-  border: transparent;
-  border-radius: 0.4rem;
+  width: 20em;
+  height: 4rem;
+  border-radius: 1rem;
+  outline: 0;
+  border: 0;
   background-color: darkturquoise;
+  cursor: pointer;
 }
 
 .go-to-checkout a {
@@ -233,7 +236,7 @@ html {
     padding-left: 1rem;
     padding-right: 1rem;
     border: transparent;
-    border-radius: 0.4rem;
+    border-radius: 1rem;
     background-color: darkturquoise;
   }
 
@@ -334,7 +337,7 @@ html {
   .go-to-checkout {
     padding: 0.5rem;
     border: transparent;
-    border-radius: 0.4rem;
+    border-radius: 1rem;
     background-color: darkturquoise;
   }
 
@@ -438,7 +441,7 @@ html {
   .go-to-checkout {
     padding: 1rem;
     border: transparent;
-    border-radius: 0.4rem;
+    border-radius: 1rem;
     background-color: darkturquoise;
   }
 

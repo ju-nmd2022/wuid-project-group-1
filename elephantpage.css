@@ -56,7 +56,7 @@ html {
 }
 
 .hero a:hover {
-  color: yellow;
+  color: white;
 }
 
 /* MENU SECTION */
@@ -79,6 +79,10 @@ html {
   text-decoration: none;
   color: black;
   list-style-type: none;
+}
+
+.container .menu a:hover {
+color: white;
 }
 
 /* CONTENT SECTION */

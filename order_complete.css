@@ -56,11 +56,11 @@ html {
 
 .hero a {
   font-size: 2rem;
-  color: white;
+  color: black;
 }
 
 .hero a:hover {
-  color: yellow;
+  color: white;
 }
 
 /* MENU SECTION */
@@ -84,7 +84,7 @@ html {
 }
 
 .container .menu a:hover {
-  color: yellow;
+  color: white;
 }
 
 /* CONTENT SECTION */

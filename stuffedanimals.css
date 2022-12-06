@@ -59,7 +59,7 @@ html {
 }
 
 .hero a:hover {
-  color: yellow;
+  color: white;
 }
 
 /* MENU SECTION */
@@ -84,7 +84,7 @@ html {
 }
 
 .container .menu a:hover {
-  color: yellow;
+  color: white;
 }
 
 /* CONTENT SECTION */
