@@ -69,14 +69,14 @@ html {
   justify-content: center;
   align-items: center;
 
-  background-color: #0098ff;
+  background-color: darkturquoise;
   grid-column: 1 / -1;
   grid-row: 4;
   gap: 2em;
 }
 
 .container .menu a {
-  font-size: 2rem;
+  font-size: 1.5rem;
   text-decoration: none;
   color: black;
 }
@@ -131,7 +131,7 @@ html {
 
   grid-column: 1 / -1;
   grid-row: 24;
-  background-color: #0098ff;
+  background-color: darkturquoise;
 }
 
 .footer p {
@@ -228,7 +228,7 @@ html {
     padding: 0.5rem;
     border: transparent;
     border-radius: 0.4rem;
-    background-color: #0098ff;
+    background-color: darkturquoise;
   }
 
   .go-to-checkout a {
@@ -335,7 +335,7 @@ html {
     padding: 0.5rem;
     border: transparent;
     border-radius: 0.4rem;
-    background-color: #0098ff;
+    background-color: darkturquoise;
   }
 
   .go-to-checkout a {
@@ -434,7 +434,7 @@ html {
     padding: 1rem;
     border: transparent;
     border-radius: 0.4rem;
-    background-color: #0098ff;
+    background-color: darkturquoise;
   }
 
   .go-to-checkout a {
