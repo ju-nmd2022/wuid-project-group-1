@@ -42,7 +42,7 @@ html {
 .hero h1 {
   display: flex;
   padding-left: 0.2em;
-  font-size: 5rem;
+  font-size: 4rem;
 }
 
 .hero ul {

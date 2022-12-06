@@ -13,7 +13,7 @@ html {
 }
 
 .container {
-  height: 100vh;
+  height: 100%;
   width: 100vw;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -101,6 +101,7 @@ html {
   border: solid 3px yellow;
   width: 1500px;
   background-color: white;
+  padding: 1%;
 }
 
 .shipping {
@@ -119,6 +120,24 @@ html {
   flex-direction: column;
   width: 400px;
   border: solid 3px green;
+}
+
+.payment {
+  border: solid 3px orange;
+}
+
+.payment-info {
+  background-color: #d9d9d9;
+  width: 18%;
+}
+
+.confirm-button {
+  background-color: darkturquoise;
+  padding: 5%;
+}
+
+.confirm-button h1 {
+  font-size: 1.5rem;
 }
 
 /* FOOTER SECTION */
