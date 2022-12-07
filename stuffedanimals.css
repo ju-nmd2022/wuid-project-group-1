@@ -36,7 +36,7 @@ html {
   background-size: cover;
   background-position: center;
   width: 100%;
-  min-height: 10em;
+  height: 15rem;
 }
 
 .hero h1 {

@@ -36,6 +36,7 @@ html {
   background-size: cover;
   background-position: center;
   width: 100%;
+  /* height: 15rem; */
 }
 
 .hero h1 {
@@ -76,6 +77,7 @@ html {
   grid-column: 1 / -1;
   grid-row: 4;
   gap: 2em;
+  
 }
 
 .container .menu a {
@@ -195,8 +197,13 @@ box-shadow: 0 0.2rem 0 0 rgb(19, 119, 17);
 }
 
 @media screen and (max-width: 480px) {
+  
+  .hero {
+    height: 15rem;
+  }
+
   .hero h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 
   .hero a {
@@ -300,6 +307,10 @@ box-shadow: 0 0.2rem 0 0 rgb(19, 119, 17);
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
+  
+  .hero{
+    height: 15rem;
+  }
   .hero h1 {
     font-size: 2rem;
   }
