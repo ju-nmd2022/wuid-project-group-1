@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=K2D:wght@700&display=swap");
 
 * {
   box-sizing: border-box;
@@ -39,6 +40,8 @@ html {
   display: flex;
   padding-left: 0.2em;
   font-size: 4rem;
+  font-family: "K2D", sans-serif;
+  color: black;
 }
 
 .hero ul {
@@ -83,7 +86,6 @@ html {
   color: white;
 }
 
-
 /* CONTENT SECTION */
 
 .content1 {
@@ -94,7 +96,7 @@ html {
   align-content: center;
 }
 
-.slide{
+.slide {
   width: 35rem;
 }
 
