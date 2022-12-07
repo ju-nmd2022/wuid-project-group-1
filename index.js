@@ -1,10 +1,3 @@
-// const searchBar = document.getElementById("searchBar");
-
-// searchBar.addEventListener("keyup", (e) => {
-//   const searchString = e.target.value;
-// });
-
-
 
 
 // java for changing elephant images on individual item page
@@ -19,9 +12,9 @@ function changeImage(fileName){
 // https://www.youtube.com/watch?v=4YQ4svkETS0
 // used this guide with help
 
-var i = 0;
-var images = [];
-var time = 3000;
+let i = 0;
+let images = [];
+let time = 3000;
 
 images[0] = 'images/grogu.webp';
 images[1] = 'images/toysale.jpeg';
