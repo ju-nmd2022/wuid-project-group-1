@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=K2D:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap%22");
 
 * {
   box-sizing: border-box;
@@ -153,13 +154,25 @@ html {
   width: 20em;
   height: 4rem;
   border-radius: 1rem;
-  outline: 0;
-  border: 0;
-  background-color: darkturquoise;
+  border: none;
+  background-color: rgb(82, 208, 36);
   cursor: pointer;
+  box-shadow: 0 0.5rem 0 0 rgb(24, 153, 22);
+}
+
+.shoppingcartbutton:hover{
+  background-color: rgb(117, 231, 76);
+
+}
+
+.shoppingcartbutton:active{
+transform: translate(0.25rem);
+box-shadow: 0 0.2rem 0 0 rgb(19, 119, 17);
 }
 .shoppingcartbutton p {
   font-size: 1.5rem;
+  font-family: "Bebas Neue", cursive;
+  font-size: 1.75rem;
 }
 
 /* FOOTER SECTION */
@@ -289,7 +302,7 @@ html {
     padding-bottom: 1em;
   }
 
-  .shoppingcartbutton {
+  /* .shoppingcartbutton {
     width: 20em;
     height: 3rem;
     border-radius: 1em;
@@ -301,7 +314,7 @@ html {
   }
   .shoppingcartbutton p {
     font-size: 1.5rem;
-  }
+  } */
 
   .footer {
     display: flex;
