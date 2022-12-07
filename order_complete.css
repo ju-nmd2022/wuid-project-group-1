@@ -158,6 +158,15 @@ main {
 }
 
 @media screen and (max-width: 480px) {
+
+  .container{
+    grid-template-rows: repeat(3, 1fr);
+  }
+  
+  .hero {
+    height: 10rem;
+  }
+  
   .hero h1 {
     font-size: 2.5rem;
   }
@@ -170,10 +179,15 @@ main {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    /* justify-content: space-evenly; */
     gap: 0.5em;
   }
 
+  .container .menu{
+    height: 3rem;
+    grid-row: 1;
+    margin-top: 13rem;
+  }
   .container .menu a {
     font-size: 1rem;
   }
@@ -182,7 +196,7 @@ main {
     display: flex;
     flex-direction: column;
     grid-column: 1/ -1;
-    grid-row: 5;
+    grid-row: 2;
     padding-top: 1em;
     padding-left: 1em;
     gap: 1rem;
@@ -211,29 +225,6 @@ main {
     grid-column: 1 / -1;
     grid-row: 6 / 12;
     /* justify-content: space-between; */
-  }
-
-  section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 1.5rem;
-    padding-bottom: 2.5rem;
-    /* height: 500px; */
-  }
-  section img {
-    max-width: 350px;
-  }
-
-  section a {
-    padding: 0.5rem;
-    font-size: 1.2rem;
-    text-decoration: none;
-    color: black;
-  }
-
-  section p {
-    font-size: 1.5rem;
   }
 
   .footer {
