@@ -144,15 +144,16 @@ html {
   box-shadow: 0 0.5rem 0 0 rgb(24, 153, 22);
 }
 
-.shoppingcartbutton:hover{
+.go-to-checkout:hover{
   background-color: rgb(117, 231, 76);
 
 }
 
-.shoppingcartbutton:active{
+.go-to-checkout:active{
 transform: translate(0.25rem);
 box-shadow: 0 0.2rem 0 0 rgb(19, 119, 17);
 }
+
 
 .go-to-checkout p {
     font-size: 1.5rem;
