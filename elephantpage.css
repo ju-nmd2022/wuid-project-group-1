@@ -204,7 +204,7 @@ box-shadow: 0 0.2rem 0 0 rgb(19, 119, 17);
 }
 
 .footer ul a:hover {
-  color: yellow;
+  color: white;
 }
 
 .footer ul li {
@@ -478,7 +478,7 @@ box-shadow: 0 0.2rem 0 0 rgb(19, 119, 17);
     width: 100%;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(auto-fill, minmax (150px, 1fr));
+    /* grid-template-rows: repeat(auto-fill, minmax (150px, 1fr)); */
   }
 
   .hero h1 {

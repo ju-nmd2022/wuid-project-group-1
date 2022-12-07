@@ -37,7 +37,7 @@ html {
   background-size: cover;
   background-position: center;
   width: 100%;
-  min-height: 230px;
+  min-height: 15rem;
 }
 
 .hero h1 {
@@ -155,7 +155,7 @@ main {
 }
 
 .footer ul a:hover {
-  color: yellow;
+  color: white;
 }
 
 .footer ul li {
