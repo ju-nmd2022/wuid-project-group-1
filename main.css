@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=K2D:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 
 * {
   box-sizing: border-box;
@@ -77,9 +78,10 @@ html {
 }
 
 .container .menu a {
-  font-size: 1.5rem;
+  font-size: 2rem;
   text-decoration: none;
   color: black;
+  font-family: "Bebas Neue", cursive;
 }
 
 .container .menu a:hover {

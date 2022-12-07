@@ -123,6 +123,7 @@ html {
   padding-left: 2em;
   padding-right: 2em;
 }
+
 .cute {
   padding-top: 1rem;
 }
@@ -139,7 +140,8 @@ html {
 }
 
 .textarea h2 {
-  font-size: 2.5rem;
+  font-family: "Bebas Neue", cursive;
+  font-size: 4rem;
 }
 
 .textarea h3 {
