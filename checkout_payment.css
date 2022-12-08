@@ -12,14 +12,16 @@ html {
   font-family: "Poppins", "sans-serif";
   background-color: #fff;
   overflow: scroll;
+
+  /* use this one to see the layout more easily while coding */
+  /* background-color: blue; */
 }
 
 .container {
-  height: 100%;
+  height: 100vh;
   width: 100%;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(10, 1fr);
 }
 
 /* HERO SECTION */
@@ -30,13 +32,13 @@ html {
   align-items: center;
 
   grid-column: 1 / -1;
-  grid-row: 1 / 3;
+  grid-row: 1 / 2;
 
   background-image: url(./images/party.jpg);
   background-size: cover;
   background-position: center;
   width: 100%;
-  min-height: 230px;
+  height: 15rem;
 }
 
 .hero h1 {
@@ -69,14 +71,15 @@ html {
 
 .container .menu {
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
 
   background-color: darkturquoise;
   grid-column: 1 / -1;
-  grid-row: 3;
+  grid-row: 2;
   gap: 2em;
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 
 .container .menu a {
@@ -92,114 +95,134 @@ html {
 
 /* CONTENT SECTION */
 
-.parent {
-  padding: 1%;
-  display: grid;
-  grid-column: 1 / 14;
-  grid-row: 4 / 12;
-  /* border: solid 3px red; */
+.contact-information {
+  display: flex;
+  flex-direction: column;
+  grid-column: 2 / 12;
+  grid-row: 3;
+  gap: 0.5em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+.contact-information p {
+  display: flex;
   justify-content: center;
-  background-color: #d9d9d9;
-}
-
-.content-box {
-  /* border: solid 3px yellow; */
-  width: 100%;
-  background-color: white;
-  padding: 1%;
-}
-
-.content-box h1 {
   font-family: "Bebas Neue", cursive;
-  font-size: 2rem;
+  font-size: 1.5em;
 }
 
-.shipping {
-  /* border: solid 3px pink; */
+.email {
   display: flex;
-  gap: 3%;
+  grid-column: 2 / 12;
+  grid-row: 4;
+  text-align: center;
+  justify-items: center;
+  justify-self: center;
+  padding-top: 0.1em;
+  padding-bottom: 0.1em;
+  gap: 1em;
 }
 
-.shipping-1 {
+.name {
   display: flex;
-  flex-direction: column;
-  width: 400px;
-  /* border: solid 3px blue; */
+  flex-wrap: wrap;
+  grid-column: 2 / 12;
+  grid-row: 5;
+  justify-content: center;
+  justify-self: center;
+  padding-top: 1em;
+  gap: 1em;
 }
 
-.shipping-2 {
+.firstname {
+  text-align: center;
+}
+
+.lastname {
+  text-align: center;
+  padding-top: 0.1em;
+  padding-bottom: 0.1em;
+}
+
+.address {
   display: flex;
-  flex-direction: column;
-  width: 400px;
-  /* border: solid 3px green; */
+  flex-wrap: wrap;
+  grid-column: 2 / 12;
+  grid-row: 6;
+  justify-content: center;
+  justify-self: center;
+  padding-top: 1em;
+  gap: 1em;
 }
 
-.payment-info {
-  background-color: #d9d9d9;
-  width: 400px;
+.country {
+  text-align: center;
+  padding-top: 0.1em;
+  padding-bottom: 0.1em;
+}
+
+.postal {
+  text-align: center;
+  padding-top: 0.1em;
+  padding-bottom: 0.1em;
+}
+
+.city {
+  text-align: center;
+  padding-top: 0.1em;
+  padding-bottom: 0.1em;
+}
+
+.street {
+  text-align: center;
+}
+
+.house {
+  text-align: center;
+}
+
+.payment-options {
+  font-family: "Bebas Neue", cursive;
   display: flex;
-  gap: 16%;
+  flex-wrap: wrap;
+  grid-column: 2 / 12;
+  grid-row: 7;
+  justify-content: center;
+  font-size: 1.5em;
+  padding-top: 1em;
 }
 
-.confirm-button {
-  width: 20em;
-  height: 4rem;
-  border-radius: 1rem;
-  outline: 0;
-  border: 0;
-  background-color: darkturquoise;
-  cursor: pointer;
-}
-
-.confirm-button h1 {
-  font-size: 1.5rem;
-}
-
-.round-button img {
-  width: 50px;
-  height: 30px;
-}
-
-.swish-box {
+.payment-links {
   display: flex;
-  gap: 13%;
-  /* border: solid 1px red; */
+  flex-wrap: wrap;
+  grid-column: 2 / 12;
+  grid-row: 8;
+  justify-content: center;
+  gap: 2em;
+  padding-top: 1em;
 }
 
-.card-box {
-  display: flex;
-  gap: 13%;
-  /* border: solid 1px red; */
-}
-
-.card-info {
-  margin-left: 2%;
-  display: grid;
-  width: 370px;
-}
-
-.paypal-box {
-  display: flex;
-  gap: 13%;
-  /* border: solid 1px red; */
-}
-
-.invoice-box {
-  display: flex;
-  gap: 13%;
-  /* border: solid 1px red; */
+.payment-links a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.5em;
 }
 
 /* FOOTER SECTION */
 
+/* https://www.geeksforgeeks.org/how-to-create-footer-to-stay-at-the-bottom-of-a-web-page/ */
+
 .footer {
+  grid-column: 1 / -1;
+  grid-row: 12;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   font-size: 2rem;
-  height: 50px;
-  grid-column: 1 / -1;
-  grid-row: 12;
+
+  /* grid-column: 1 / -1;
+  grid-row: 20; */
   background-color: darkturquoise;
 }
 
@@ -216,44 +239,12 @@ html {
 }
 
 .footer ul a:hover {
-  color: yellow;
+  color: white;
 }
 
 .footer ul li {
   list-style-type: none;
 }
-
-/* @media screen and (min-width: 390px) {
-  .container {
-    height: 100vh;
-    width: 100vw;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-  }
-
-  .hero {
-  }
-
-  .hero h1 {
-    font-size: 2rem;
-  }
-
-  .hero a {
-    font-size: 1.5rem;
-  }
-
-  .container .menu {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 0.8em;
-  }
-
-  .container .menu a {
-    font-size: 1rem;
-  }
-} */
 
 @media screen and (max-width: 480px) {
   .hero h1 {
@@ -270,71 +261,70 @@ html {
     flex-wrap: wrap;
     justify-content: space-evenly;
     gap: 0.5em;
+    padding-left: 1em;
+    padding-right: 1em;
   }
 
   .container .menu a {
     font-size: 1rem;
   }
 
-  .shoppingcart-elephant {
+  .infobox {
     display: flex;
     flex-direction: column;
+    grid-column: 1/ -1;
+    grid-row: 5;
+    padding-top: 1em;
+    padding-left: 1em;
+    gap: 1rem;
+  }
+  .infobox h2 {
+    display: flex;
+    justify-content: center;
+    grid-column: 1 / -1;
+    font-size: 2rem;
+  }
+
+  .infobox p {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 1.5rem;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+  }
+
+  main {
+    display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     grid-column: 1 / -1;
-    background-color: gainsboro;
-    padding: 1rem;
+    grid-row: 6 / 12;
+    /* justify-content: space-between; */
   }
 
-  .shoppingcart-elephant img {
-    width: 10rem;
-  }
-
-  .shoppingcart-brocc {
+  section {
     display: flex;
     flex-direction: column;
-    grid-column: 1 / -1;
-    grid-row: 8;
-    justify-content: center;
     align-items: center;
-    background-color: gainsboro;
-    padding: 1rem;
+    padding: 1.5rem;
+    padding-bottom: 2.5rem;
+    /* height: 500px; */
+  }
+  section img {
+    max-width: 350px;
   }
 
-  .shoppingcart-brocc img {
-    width: 10rem;
-  }
-
-  .total-sum {
-    display: flex;
-    flex-direction: column;
-    grid-column: 1 / -1;
-    grid-row: 10;
-    justify-content: space-evenly;
-    align-items: center;
-    background-color: gainsboro;
-    padding: 1rem;
-  }
-
-  .total-sum h2 {
-    font-size: 1.4rem;
-  }
-
-  .total-sum p {
-    font-size: 1.1rem;
-    line-height: 1.8;
-  }
-
-  .go-to-checkout {
+  section a {
     padding: 0.5rem;
-    border: transparent;
-    border-radius: 0.4rem;
-    background-color: darkturquoise;
-  }
-
-  .go-to-checkout a {
+    font-size: 1.2rem;
     text-decoration: none;
     color: black;
+  }
+
+  section p {
+    font-size: 1.5rem;
   }
 
   .footer {
@@ -346,12 +336,12 @@ html {
   }
 
   .footer p {
-    font-size: 1rem;
+    font-size: 1.5rem;
     padding-left: 0.5em;
   }
 
   .container .footer ul a {
-    font-size: 1rem;
+    font-size: 1.5rem;
     padding-right: 0.5em;
     color: black;
     flex-direction: row;
@@ -362,6 +352,7 @@ html {
     list-style-type: none;
   }
 }
+
 @media screen and (min-width: 481px) and (max-width: 768px) {
   .hero h1 {
     font-size: 3rem;
@@ -378,173 +369,24 @@ html {
   }
 
   .container .menu a {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
 
-  .shoppingcart-elephant {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    grid-column: 1 / -1;
-    grid-row: 6;
-    background-color: gainsboro;
-    padding: 2rem;
+  .content2 p {
+    font-size: 1.5rem;
+    padding-left: 1em;
   }
-
-  .shoppingcart-elephant img {
-    width: 10rem;
-  }
-
-  .shoppingcart-brocc {
-    display: flex;
-    flex-direction: column;
-    grid-column: 1 / -1;
-    grid-row: 8;
-    justify-content: center;
-    align-items: center;
-    background-color: gainsboro;
-    padding: 2rem;
-  }
-
-  .shoppingcart-brocc img {
-    width: 10rem;
-  }
-
-  .total-sum {
-    display: flex;
-    flex-direction: column;
-    grid-column: 1 / -1;
-    grid-row: 10;
-    justify-content: space-evenly;
-    align-items: center;
-    background-color: gainsboro;
-    padding: 2rem;
-  }
-
-  .total-sum h2 {
-    font-size: 1.4rem;
-  }
-
-  .total-sum p {
-    font-size: 1.1rem;
-    line-height: 1.8;
-  }
-
-  .go-to-checkout {
-    padding: 0.5rem;
-    border: transparent;
-    border-radius: 0.4rem;
-    background-color: darkturquoise;
-  }
-
-  .go-to-checkout a {
+  .content2 a {
     text-decoration: none;
-    color: black;
+    color: yellow;
+    font-size: 1.5rem;
+    padding-left: 1em;
   }
 
   .footer {
     display: flex;
     flex-direction: row;
 
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .footer p {
-    font-size: 1rem;
-    padding-left: 0.5em;
-  }
-
-  .container .footer ul a {
-    font-size: 1rem;
-    padding-right: 0.5em;
-    color: black;
-    flex-direction: row;
-    text-decoration: none;
-  }
-}
-
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-  .hero h1 {
-    font-size: 3rem;
-  }
-
-  .hero a {
-    font-size: 2rem;
-  }
-
-  .container .menu {
-    display: flex;
-    justify-content: center;
-    gap: 2em;
-  }
-
-  .container .menu a {
-    font-size: 1.5rem;
-  }
-
-  .shoppingcart-elephant {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    grid-column: 1 / 3;
-    grid-row: 6 / 7;
-    background-color: gainsboro;
-  }
-
-  .shoppingcart-elephant img {
-    width: 10rem;
-  }
-
-  .shoppingcart-brocc {
-    display: flex;
-    flex-direction: column;
-    grid-column: 1 / 3;
-    grid-row: 8 / 11;
-    justify-content: center;
-    align-items: center;
-    background-color: gainsboro;
-  }
-
-  .shoppingcart-brocc img {
-    width: 10rem;
-  }
-
-  .total-sum {
-    display: flex;
-    flex-direction: column;
-    grid-column: 4 / 6;
-    grid-row: 6 / 11;
-    justify-content: space-evenly;
-    align-items: center;
-    background-color: gainsboro;
-  }
-
-  .total-sum h2 {
-    font-size: 2rem;
-  }
-
-  .total-sum p {
-    font-size: 1.5rem;
-  }
-
-  .go-to-checkout {
-    padding: 1rem;
-    border: transparent;
-    border-radius: 0.4rem;
-    background-color: darkturquoise;
-  }
-
-  .go-to-checkout a {
-    text-decoration: none;
-    color: black;
-  }
-
-  .footer {
-    display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
   }
