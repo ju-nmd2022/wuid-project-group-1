@@ -12,9 +12,6 @@ html {
   font-family: "Poppins", "sans-serif";
   background-color: #fff;
   overflow: scroll;
-
-  /* use this one to see the layout more easily while coding */
-  /* background-color: blue; */
 }
 
 .container {
@@ -268,8 +265,6 @@ html {
 
 /* FOOTER SECTION */
 
-/* https://www.geeksforgeeks.org/how-to-create-footer-to-stay-at-the-bottom-of-a-web-page/ */
-
 .footer {
   grid-column: 1 / -1;
   grid-row: 12;
@@ -279,8 +274,6 @@ html {
   align-items: center;
   font-size: 2rem;
 
-  /* grid-column: 1 / -1;
-  grid-row: 20; */
   background-color: darkturquoise;
 }
 
