@@ -138,33 +138,6 @@ html {
   text-align: center;
 }
 
-.dealimg {
-  width: 10rem;
-}
-
-.searchbar #searchbar {
-  outline: none;
-  border: transparent;
-  border-radius: 0.3rem;
-  text-align: center;
-  padding-top: 0.2rem;
-  padding-bottom: 0.2rem;
-  border: 0.2rem solid black;
-}
-
-.searchbar #searchbutton {
-  outline: 0;
-  border: 0.2rem solid black;
-  border-radius: 0.2rem;
-  background-color: #fff;
-  padding-top: 0.2rem;
-  padding-bottom: 0.2rem;
-  padding-left: 0.3rem;
-  padding-right: 0.3rem;
-}
-.searchbar {
-  padding-bottom: 2rem;
-}
 /* FOOTER SECTION */
 
 .footer {
@@ -239,10 +212,6 @@ html {
     color: black;
   }
 
-  .searchbar {
-    padding-left: 3em;
-  }
-
   .content2 {
     display: flex;
     flex-direction: row;
@@ -315,10 +284,7 @@ html {
     text-decoration: none;
     color: black;
   }
-  .deals {
-    grid-column: 6 / 8;
-    grid-row: 10;
-  }
+
   .content2 {
     display: flex;
     flex-direction: column;
@@ -397,10 +363,7 @@ html {
     text-decoration: none;
     color: black;
   }
-  .deals {
-    grid-column: 6 / 8;
-    grid-row: 10;
-  }
+  
   .content2 {
     display: flex;
     flex-direction: column;

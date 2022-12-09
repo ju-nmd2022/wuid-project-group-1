@@ -115,16 +115,6 @@ html {
   font-size: 1.5rem;
 }
 
-main {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  grid-column: 4 / -1;
-  grid-row: 5 / 12;
-  /* justify-content: space-between; */
-}
-
 /* FOOTER SECTION */
 
 /* https://www.geeksforgeeks.org/how-to-create-footer-to-stay-at-the-bottom-of-a-web-page/ */
@@ -137,8 +127,6 @@ main {
   justify-content: space-between;
   font-size: 2rem;
 
-  /* grid-column: 1 / -1;
-  grid-row: 20; */
   background-color: darkturquoise;
 }
 
@@ -219,16 +207,6 @@ main {
     font-size: 1.5rem;
     padding-left: 1.5em;
     padding-right: 1.5em;
-  }
-
-  main {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    grid-column: 1 / -1;
-    grid-row: 6 / 12;
-    /* justify-content: space-between; */
   }
 
   .footer {
